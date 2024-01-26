@@ -2,7 +2,7 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     # Перевіряємо вхідні параметри
-    if min < 1 or max > 1000 or quantity > max or quantity < min:
+    if min < 1 or max > 1000 or min > quantity > max:
         return [] # Повертаємо пустий список, якщо вхідні параметри неправильні
     else:
         # Створюємо пусту множину
